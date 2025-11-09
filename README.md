@@ -6,3 +6,4 @@ https://mvnrepository.com/artifact/org.springframework/spring-webmvc
 ### Api spec
 http://localhost:8080/swagger-ui/index.html
 
+https://www.youtube.com/watch?v=Cw0J6jYJtzw

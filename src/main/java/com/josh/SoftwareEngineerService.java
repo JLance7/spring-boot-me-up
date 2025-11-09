@@ -18,4 +18,13 @@ public class SoftwareEngineerService {
     public List<SoftwareEngineer> getAllSoftwareEngineers(){
         return softwareEngineerRepository.findAll();
     }
+
+    public void insertSoftwareEngineer(SoftwareEngineer softwareEngineer) {
+        softwareEngineerRepository.save(softwareEngineer);
+    }
+
+    public SoftwareEngineer getSoftwareEngineers(Integer id) {
+        return softwareEngineerRepository.findById(id)
+                .orElseThrow(() -> new IllegalStateException("Invalid id"));
+    }
 }
